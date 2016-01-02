@@ -11,8 +11,7 @@ zone.event('send', function (files) {
   for (var i = 0, f; f = files[i]; i++) {
   	output.push('<ul class="item"><li><b>Name:</b> ', decodeURIComponent(escape(f.name)), '</li><li><b>Type:</b> ', f.type || 'n/a', '</li><li><b>Size:</b> ',
   		f.size, ' bytes, </li><li><b>last modified:</b> ',
-  		f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
-  		'</li></ul>');
+  		f.modDate,'</li></ul>');
   }
   document.getElementById('list').innerHTML = '<h4>Information</h4><ul class="main">' + output.join('') + '</ul>';
 })
