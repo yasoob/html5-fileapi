@@ -1,0 +1,106 @@
+body{
+	background: repeat-x left top url("data:image/gif;base64,R0lGODlhNAALAIAAABBQdcHm+SwAAAAANAALAAACK4SPqWvhD6MMrNo2s7xc6f90IgZqo1h+Z5ea69VmLxxvc1Xb95JHO9ODWAoAOw==") #f2f2f2;
+}
+.selection{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 6em;
+	text-align: center;
+}
+h4{
+	margin-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px dotted black;
+    border-bottom: none;
+    background-color: #B7B3B3;
+    color: white;
+}
+ul.main{
+	text-align: left;
+    margin-top: 0px;
+    padding: 30px;
+    background-color: white;
+    list-style: none;
+    padding-left: 50px;
+    border: 1px dotted black;
+    border-style: dashed;
+}
+ul.item{
+	list-style: none;
+	margin-bottom: 30px;
+	padding-left: 0px;
+}
+ul.item:last-child{
+	margin-bottom: 0px;
+}
+
+
+/***
+  Styles below are only required if you're using <iframe> fallback in
+  addition to HTML5 drag & drop (only working in Firefox/Chrome/Opera 15+).
+ ***/
+
+/* Essential FileDrop zone element configuration: */
+.fd-zone {
+  position: relative;
+  overflow: hidden;
+  /* The following are not required but create a pretty box: */
+  width: 15em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Hides <input type="file"> while simulating "Browse" button: */
+.fd-file {
+  opacity: 0;
+  font-size: 118px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  font-family: sans-serif;
+}
+
+/* Provides visible feedback when user drags a file over the drop zone: */
+.fd-zone.over { border-color: maroon; background: #eee; }
+
+
+
+html, body {
+	height: 100%;
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+.selection {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 0px; 
+}
+.selection:after {
+  content: "";
+  display: block;
+}
+footer, .selection:after {
+  height: 30px; 
+}
+footer {
+  background: #105075;
+  padding-top: 1px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  color: white;
+  font-weight: bold;
+}
+footer a{
+	color: #B5CFDE;
+	transition: all .5s;
+}
+footer a:hover{
+	color: white;
+}
