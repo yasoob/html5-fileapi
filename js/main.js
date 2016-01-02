@@ -9,7 +9,7 @@ zone.event('send', function (files) {
   // files is a FileList of File objects. List some properties.
   var output = [];
   for (var i = 0, f; f = files[i]; i++) {
-  	output.push('<ul class="item"><li><b>Name:</b> ', decodeURIComponent(escape(f.name)), '</li><li><b>Type:</b> ', f.type || 'n/a', '</li><li><b>Size:</b> ',
+  	output.push('<ul class="item"><li class="f-name"><b>Name:</b> ', decodeURIComponent(escape(f.name)), '</li><li><b>Type:</b> ', f.type || 'n/a', '</li><li><b>Size:</b> ',
   		f.size, ' bytes, </li><li><b>last modified:</b> ',
   		f.modDate,'</li></ul>');
   }

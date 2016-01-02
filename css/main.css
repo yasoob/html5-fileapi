@@ -34,7 +34,9 @@ ul.item{
 ul.item:last-child{
 	margin-bottom: 0px;
 }
-
+.f-name{
+  word-wrap: break-word;
+}
 
 /***
   Styles below are only required if you're using <iframe> fallback in
